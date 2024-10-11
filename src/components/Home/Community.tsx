@@ -14,8 +14,8 @@ const Community = (props: Props) => {
           <p className="text-lg font-sans text-body-text/70 mb-[32px] ">
             If you want to go far, go together. Our Telegram community surrounds
             you with others who can help you along your financial journey with
-            tips, support, advice and learning. It's completely free and open to
-            new and seasoned investors.
+            tips, support, advice and learning. It&apos;s completely free and
+            open to new and seasoned investors.
           </p>
 
           <button className="bg-[#A0DDE2] text-[#2D2D2D] px-8 py-3 rounded-md font-[500] ">
