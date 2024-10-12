@@ -14,7 +14,7 @@ const Regulations = (props: Props) => {
       {/* content */}
       <div className=" max-w-4xl w-full  z-20 min-h-[400px] flex items-center justify-center  ">
         <div className="text-center ">
-          <h2 className="text-[32px] md:text-5xl font-[500] text-brand-teal mb-4 ">
+          <h2 className="text-[32px] md:text-5xl font-[500] text-black lg:text-brand-teal mb-4 ">
             How We Are Regulated
           </h2>
           <p className="text-[15px] leading-6 lg:text-lg text-body-text max-w-lg mx-auto ">

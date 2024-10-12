@@ -27,8 +27,10 @@ export default function Home() {
           <Goals />
         </div>
       </div>
-      <Regulations />
-      <Testimonials />
+      <div className="space-y-[80px] ">
+        <Regulations />
+        <Testimonials />
+      </div>
       <div
         style={{
           maxWidth: MAX_SCREEN_CONTENT_WIDTH,

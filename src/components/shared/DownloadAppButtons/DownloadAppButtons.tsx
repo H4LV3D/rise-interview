@@ -19,7 +19,7 @@ function DownloadButton({
   store: { name: string; icon: React.ReactNode; link: string };
 }) {
   return (
-    <button className="flex items-center space-x-2 bg-[#2D2D2D] px-4 pr-8 py-2.5 rounded-[10px] shadow-md">
+    <button className="flex items-center space-x-2 bg-[#2D2D2D] px-4 lg:pr-8 py-2.5 rounded-[10px] shadow-md">
       {store.icon}
       <div className="text-white text-start -space-y-1 ">
         <p className="text-[12px] lg:text-[14px] ">Download on the</p>

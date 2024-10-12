@@ -47,7 +47,9 @@ const Navbar = (props: Props) => {
           maxWidth: MAX_SCREEN_CONTENT_WIDTH,
         }}
       >
-        <BrandLogo color={BRAND_COLOR} />
+        <div className="md:pl-[50px] ">
+          <BrandLogo color={BRAND_COLOR} />
+        </div>
 
         <IoMdMenu size={26} className="md:hidden text-brand-teal" />
 

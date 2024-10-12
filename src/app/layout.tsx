@@ -65,7 +65,7 @@ export default function RootLayout({
         className={` ${clash.variable} ${dmSans.variable} font-space antialiased`}
       >
         <Navbar />
-        <div className="pb-[80px] overflow-x-hidden px-6 lg:px-0 ">
+        <div className="pb-[20px] lg:pb-[80px] overflow-x-hidden px-6 lg:px-0 ">
           {children}
         </div>
         <Footer />

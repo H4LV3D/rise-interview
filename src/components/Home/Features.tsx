@@ -36,15 +36,17 @@ const Feature = ({ id, title, description, image }: Props) => {
             } `}
           >
             <div className="space-y-[10px] ">
-              <h3 className="font-[500] text-[32px]  ">{title}</h3>
-              <p className="text-body-text text-base font-sans pr-10 ">
+              <h3 className="font-[500] text-[32px] text-center lg:text-start ">
+                {title}
+              </h3>
+              <p className="text-body-text text-base font-sans lg:pr-10 text-center lg:text-start ">
                 {description}
               </p>
             </div>
 
             <Link
               href={"/features"}
-              className=" text-brand-teal text-lg font-[500] flex items-center space-x-4 "
+              className=" text-brand-teal text-lg font-[500] lg:flex items-center space-x-4 hidden  "
             >
               <span className="">Start Investing Now</span>
               <FaArrowRightLong />
@@ -87,10 +89,47 @@ const Features = () => {
       image: "/images/feature_4.png",
     },
   ];
+
+  const mobileFeatures = [
+    {
+      id: 1,
+      title: "Superior Performance",
+      description:
+        "Rise outperforms your other alternatives in two ways. The first is through our expert, algorithm driven investment approach that picks through over 3,000 data sets to find the perfect investment for you. ",
+      image: "/images/feature_1.png",
+    },
+    {
+      id: 2,
+      title: "Personalization",
+      description:
+        "No two people are the same, and everyone’s financial goals are different. Rise understands this, which is why we tailor your journey to financial freedom to fit you.",
+      image: "/images/feature_2.png",
+    },
+    {
+      id: 3,
+      title: "Diversification",
+      description:
+        "Rise offers a choice of three asset classes: US equities, US real estate and fixed income assets to provide stability to your investments and protection from market declines. You can pick one asset class or",
+      image: "/images/feature_3.png",
+    },
+  ];
+
   return (
     <>
-      <div className="space-y-[64px] ">
+      <div className="space-y-[64px] hidden lg:block ">
         {features.map((feature) => (
+          <Feature
+            key={feature.id}
+            id={feature.id}
+            title={feature.title}
+            description={feature.description}
+            image={feature.image}
+          />
+        ))}
+      </div>
+
+      <div className="space-y-[64px] lg:hidden ">
+        {mobileFeatures.map((feature) => (
           <Feature
             key={feature.id}
             id={feature.id}
