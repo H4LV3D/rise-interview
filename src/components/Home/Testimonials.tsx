@@ -93,13 +93,13 @@ const Testimonials = () => {
           </p>
         </div>
 
-        <div className="hidden lg:flex gap-x-6 overflow-auto max-w-[1350px] mx-auto bg-[#ECFEFE]/50 ">
+        <div className="hidden lg:flex gap-x-6 overflow-auto max-w-[1350px] mx-auto  ">
           {testimonials.map((asset, index) => (
             <Testimonial key={index} {...asset} />
           ))}
         </div>
 
-        <div className="bg-[#ECFEFE]/50 ">
+        <div className=" lg:hidden ">
           <Testimonial {...testimonials[0]} />
         </div>
       </div>
