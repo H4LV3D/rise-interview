@@ -7,7 +7,7 @@ export default function Download() {
       <div className="h-[480px] overflow-hidden px-4 py-8 lg:p-8 bg-[#ECFEFE] rounded-[50px] grid grid-cols-1 lg:grid-cols-2">
         <div className=" lg:h-[430px] flex items-center max-w-[530px] ">
           <div className="space-y-6">
-            <div className="space-y-4 mb-8 text-center ">
+            <div className="space-y-4 mb-8 text-center lg:text-start ">
               <p className=" lg:pr-12 font-[500] font-sans text-brand-teal ">
                 Download The Rise App
               </p>

@@ -10,7 +10,7 @@ export default function Hero() {
     { size: 32, x: 50, y: 53 }, // Ellipse 5
   ];
   return (
-    <div className="relative mt-[23px] ">
+    <div className="relative lg:mt-[23px] ">
       <div className="min-h-[65vh] grid grid-cols-1 md:grid-cols-2 pt-16 lg:pt-0 ">
         <div className="flex items-center max-w-[530px] z-10 ">
           <div className="space-y-6">

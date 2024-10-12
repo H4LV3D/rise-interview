@@ -1,16 +1,23 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import BrandLogo from "../BrandLogo/BrandLogo";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { IoIosArrowRoundDown } from "react-icons/io";
 import { BRAND_COLOR, MAX_SCREEN_CONTENT_WIDTH } from "@/constatnts/constants";
 import { IoMdMenu } from "react-icons/io";
+import MobileNavbar from "../MobileNavbar/MobileNavbar";
 
 type Props = {};
 
 const Navbar = (props: Props) => {
   const path = usePathname();
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
 
   const navItems = [
     {
@@ -47,11 +54,13 @@ const Navbar = (props: Props) => {
           maxWidth: MAX_SCREEN_CONTENT_WIDTH,
         }}
       >
-        <div className="md:pl-[50px] ">
+        <Link href={"/"} className="block  md:pl-[50px] ">
           <BrandLogo color={BRAND_COLOR} />
-        </div>
+        </Link>
 
-        <IoMdMenu size={26} className="md:hidden text-brand-teal" />
+        <button onClick={toggleNavbar}>
+          <IoMdMenu size={26} className="md:hidden " />
+        </button>
 
         <div className="hidden md:flex items-center space-x-6 ">
           {navItems.map((item, index) => (
@@ -74,6 +83,15 @@ const Navbar = (props: Props) => {
           ))}
         </div>
       </div>
+
+      {
+        <MobileNavbar
+          isOpen={isOpen}
+          setIsOpen={setIsOpen}
+          links={navItems}
+          path={path}
+        />
+      }
     </>
   );
 };
