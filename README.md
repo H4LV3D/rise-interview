@@ -13,8 +13,7 @@ I am Toluwalope Akinkunmi and I am a FrontEnd Engineer. I am passionate about bu
 
 - The project is structured in the following way:
   - `components`: This folder contains all the components used in the project.
-  - `pages`: This folder contains all the pages in the project.
-  - `styles`: This folder contains the global styles used in the project.
+  - `app`: This folder contains all the pages in the project.
   - `public`: This folder contains the images used in the project.
 
 ## How to run the project
